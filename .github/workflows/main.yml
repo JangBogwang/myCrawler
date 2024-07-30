@@ -1,14 +1,21 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+# github action의 이름 
+name: Crawler
 
+# 이벤트가 발생하는 조건 
 on: [push]
  
+# 이벤트 발생시 실행하는 job 
 jobs:
+  #작업 단위 
   build:
+  # 실행되는 OS
     runs-on: ubuntu-latest
     steps:
+        # OS에서 실행할 이름 
       - name: hello world 출력!! 
+        # OS에서 실행할 명령어 
         run: echo Hello, world!
 
       - name: 디렉토리 출력!!
